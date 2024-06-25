@@ -1,0 +1,89 @@
+@import './helpers';
+@import './reset.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .font-outline {
+    // -webkit-text-stroke: 1px black;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
+  }
+
+  .box-outline {
+    // -webkit-text-stroke: 1px black;
+    box-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
+  }
+
+  .ellipse {
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+  }
+}
+
+:root {
+  --font-system: -apple-system, blinkmacsystemfont, segoe ui, roboto, oxygen,
+    ubuntu, cantarell, fira sans, droid sans, helvetica neue, sans-serif;
+  --inspect-color: #f00;
+}
+
+html {
+  line-height: 1.5;
+  box-sizing: border-box;
+  text-rendering: geometricprecision;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  // tweak if site is light mode.
+  color-scheme: dark;
+  background-color: black;
+  overflow: overlay;
+}
+
+::selection {
+  background-color: #53e5cf;
+  // color: rgb(38 38 38);
+  color: #000;
+}
+
+::-webkit-scrollbar {
+  @apply w-2 sm:w-3;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-full border border-solid border-black bg-pink sm:border-2;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(0 0 0 / 0.1);
+}
+
+body {
+  background-color: black;
+  font-family: var(--font-system);
+  transition: opacity #{$duration / 3 + 's'} ease-in;
+}
+
+body.inspect * {
+  outline: 1px solid var(--inspect-color) !important;
+}
+
+body:not(.user-is-tabbing) button:focus,
+body:not(.user-is-tabbing) input:focus,
+body:not(.user-is-tabbing) select:focus,
+body:not(.user-is-tabbing) textarea:focus {
+  outline: none;
+}
+
+// WARNING: if you don't want to use a fade in for the body, you can remove
+// this chunk of CSS. But ALSO make sure you remove the style tag in the body in _document.tsx
+// and the transition property on the body as well. thx.
+html.fonts-loaded body {
+  opacity: 1 !important;
+}
+// end warning
