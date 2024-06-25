@@ -37,10 +37,10 @@ export const Stack = () => {
   return (
     <section className="relative flex flex-col gap-12 rounded-extra bg-cream px-12 py-36 text-center font-display drop-shadow-section sm:px-12 md:py-48">
       <p className="m-auto max-w-[80vw] text-base font-bold uppercase leading-tight text-black sm:text-5xl md:max-w-3xl md:text-title">
-        pizzas, tees & code: <br /> we have the best spices for everything
+        productos & servicios: <br /> vende con estilo.
       </p>
       <p className="m-auto px-16 text-xl uppercase leading-tight text-black sm:text-3xl md:text-5xl">
-        meet our stack for the best cooking
+        utilizamos estas tecnologias:
       </p>
       <div className="m-auto -mt-2 flex w-64 flex-wrap items-center justify-center gap-x-16 gap-y-8 md:gap-16 lg:w-full">
         {stack.map(({ url, logo, alt }, idx) => (

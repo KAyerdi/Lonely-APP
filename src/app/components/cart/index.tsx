@@ -5,10 +5,10 @@ import clsx from 'clsx'
 
 import placeholderTeeImgSrc from '~/public/tees/tee-basement-studio.png'
 
-import s from './cart.module.scss'
 import { CartFooter } from './cart-footer'
 import { CartHeader } from './cart-header'
 import { CartProduct } from './cart-product'
+import s from './cart.module.scss'
 
 const cartMock = {
   id: 'pizza',
@@ -17,7 +17,7 @@ const cartMock = {
     {
       id: 'tee',
       quantity: 2,
-      title: 'DARK BSMNT TEE',
+      title: 'PRODUCTO 1',
       description: 'THE BEST TEE YOU EVER HAD, WITH THE BASEMENT SPICE TWIST.',
       size: 'L',
       cost: 5
@@ -53,7 +53,7 @@ export const Cart = () => {
             closeTrigger={
               <RadixDialog.Close asChild>
                 <button className="flex h-8 items-center justify-end rounded-full border-2 border-black bg-pink px-2 py-2 text-xl font-bold leading-trim text-black  drop-shadow-cart transition-colors ease-in md:h-12 md:px-4 md:text-base better-hover:hover:bg-cream">
-                  CLOSE &nbsp; X
+                  CERRAR &nbsp; X
                 </button>
               </RadixDialog.Close>
             }
@@ -63,14 +63,14 @@ export const Cart = () => {
               <div className="absolute inset-0 grid place-items-center text-black">
                 <div className="text-center">
                   <p className="font-display text-[32px] uppercase leading-trim">
-                    Your cart is empty
+                  Tu carrito esta vacío
                   </p>
                   <RadixDialog.Close asChild>
                     <button
                       type="button"
                       className="font-outline font-display text-[48px] font-extrabold uppercase tracking-[0.04em] text-pink drop-shadow-cart transition-all ease-in-out better-hover:hover:translate-y-1 better-hover:hover:drop-shadow-none"
                     >
-                      Add an item
+                      Agregar
                     </button>
                   </RadixDialog.Close>
                 </div>

@@ -8,7 +8,7 @@ export const CartHeader = ({
   return (
     <div className="relative flex flex-col px-4 sm:px-10">
       <div className="flex h-16 items-center justify-between bg-cream font-display sm:h-36">
-        <p className="text-4xl font-black text-black sm:text-5xl">YOUR CART</p>
+        <p className="text-4xl font-black text-black sm:text-5xl">TU PEDIDO</p>
         {closeTrigger}
       </div>
 

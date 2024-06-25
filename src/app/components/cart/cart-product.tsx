@@ -56,7 +56,7 @@ export const CartProduct = ({
         </div>
         <div className="flex flex-col gap-1">
           <div className="flex h-6 items-center sm:h-12">
-            <p className="text-xs font-bold sm:text-base">QUANTITY</p>
+            <p className="text-xs font-bold sm:text-base">CANTIDAD</p>
             <div className="ml-3 flex gap-2 sm:ml-6 sm:gap-3">
               <button
                 className="flex h-6 w-6 items-center justify-center rounded-full border border-black bg-teal text-center font-display text-[16px] leading-trim text-black transition-colors ease-in disabled:opacity-70 sm:h-10 sm:w-10 sm:text-2xl xl:h-12  xl:w-12 xl:border-2 xl:text-base better-hover:hover:bg-cream"
@@ -83,7 +83,7 @@ export const CartProduct = ({
           </div>
 
           <div className="flex h-6 items-center text-xs sm:h-12 sm:text-base">
-            <p className="text-xs font-bold sm:text-base">SIZE</p>
+            <p className="text-xs font-bold sm:text-base">TALLE</p>
             <div className="ml-3 flex gap-3 sm:ml-6">
               <p className="flex h-6 w-6 items-center justify-center rounded-full border border-black bg-cream text-center font-display text-[16px] leading-trim text-black aria-selected:text-black sm:h-10 sm:w-10 sm:text-2xl  xl:h-12 xl:w-12 xl:border-2 xl:text-base">
                 {data.size}
@@ -91,14 +91,14 @@ export const CartProduct = ({
             </div>
           </div>
           <div className="flex h-6 items-center justify-center text-xs leading-trim sm:h-12 sm:text-base">
-            <p className="font-bold">PRICE</p>
+            <p className="font-bold">PRECIO</p>
             <p className="ml-3 flex sm:ml-6">${data.cost}</p>
 
             <button
               onClick={handleRemoveLineItem}
               className="ml-auto flex font-bold uppercase transition-opacity ease-in better-hover:hover:opacity-60"
             >
-              Remove
+              Quitar
             </button>
           </div>
         </div>

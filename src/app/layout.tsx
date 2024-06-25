@@ -32,9 +32,9 @@ const nichrome = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'Next.js & Pizza — a workshop by basement.studio',
+  title: 'LONELY — by Kevin Ayerdi Perticarari',
   description:
-    'The Spicy Shop is a simple t-shirt e-commerce project strongly spiced with basement.studio stack for the Next.js & Pizza workshop',
+    'The Lonely Shop es un sencillo proyecto de comercio electrónico de camisetas',
   metadataBase: siteURL
 }
 

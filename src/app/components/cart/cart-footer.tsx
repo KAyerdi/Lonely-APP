@@ -33,7 +33,7 @@ export const CartFooter = ({
             'font-outline inline-block justify-center font-display text-2xl font-black tracking-widest text-pink drop-shadow-cart transition-colors ease-in  sm:text-5xl'
           )}
         >
-          CHECKOUT
+          COMPRAR
         </a>
       </div>
     </div>

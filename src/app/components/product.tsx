@@ -68,7 +68,7 @@ export const Product = ({ data }: { data: ProductFragment }) => {
               )
             })}
             <label className="pointer-events-none absolute -bottom-0 left-0 opacity-0 md:left-1/2">
-              <span className="sr-only">Size</span>
+              <span className="sr-only">Talle</span>
               <input
                 tabIndex={-1}
                 name="size"
@@ -83,7 +83,7 @@ export const Product = ({ data }: { data: ProductFragment }) => {
             disabled={isAdding}
             className="flex h-6 items-center justify-center rounded-full border border-cream bg-teal px-2 text-center font-display text-[16px] font-bold leading-trim text-black transition-colors ease-in disabled:bg-black disabled:text-cream sm:h-10 sm:text-2xl md:w-52 md:px-4 xl:h-12 xl:border-2 xl:text-base better-hover:hover:bg-black better-hover:hover:text-cream"
           >
-            {isAdding ? 'ADDING...' : 'ADD TO CART'}
+            {isAdding ? 'AGREGANDO...' : 'AGREGAR'}
           </button>
         </div>
       </div>
@@ -94,7 +94,7 @@ export const Product = ({ data }: { data: ProductFragment }) => {
 const SoldOut = () => (
   <div className="absolute inset-0 z-50 grid cursor-not-allowed place-items-center rounded-xl bg-black/70 md:rounded-3xl">
     <p className="grid h-[77px] w-[174px] place-items-center rounded-[99%] border border-solid border-black bg-cream text-base font-bold uppercase text-black sm:h-[155px] sm:w-[348px] sm:text-product">
-      Sold Out
+      Agotado!
     </p>
   </div>
 )
